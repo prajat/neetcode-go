@@ -7,7 +7,7 @@ func twoSum(nums []int, target int) []int {
 			if nums[i]+nums[j] == target && i != j {
 				output = append(output, i)
 				output = append(output, j)
-				break
+				return output
 			}
 		}
 	}
