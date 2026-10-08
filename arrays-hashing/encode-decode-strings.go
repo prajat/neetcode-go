@@ -16,7 +16,7 @@ type Solution struct{}
 // 	return strings.Split(encoded, "-")
 // }
 
-// here we use enoding = <lengthOfStr>Str<><"#">
+// here we use enoding = <lengthOfStr><"#"><Str>
 func (s *Solution) Encode(strs []string) string {
 	var builder strings.Builder
 
