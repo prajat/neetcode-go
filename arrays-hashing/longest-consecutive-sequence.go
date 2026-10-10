@@ -30,3 +30,28 @@ func contains(nums []int, target int) bool {
 	return false
 }
 */
+
+// Optimal Method - O(n)
+func longestConsecutive2(nums []int) int {
+	longest := 0
+	m := make(map[int]bool, len(nums))
+	for i := range nums {
+		m[nums[i]] = true
+	}
+	for num := range m {
+		if m[num-1] {
+			continue
+		}
+		length := 1
+		current := num
+		for m[current+1] {
+			length++
+			current++
+		}
+
+		if length > longest {
+			longest = length
+		}
+	}
+	return longest
+}
