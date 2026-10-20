@@ -1,5 +1,8 @@
 package main
 
+/*Given a string s, find the length of the longest substring without duplicate characters.
+A substring is a contiguous sequence of characters within a string. */
+
 // Brute Force Method -> O(n2)
 // A brute force solution would be to try the substring starting at index i and try to find the maximum length we can form without duplicates by starting at that index.
 // We can use a hash set to detect duplicates in O(1) time.
