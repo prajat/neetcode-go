@@ -8,6 +8,9 @@ func main() {
 	//fmt.Println(LengthOfLongestSubstring("zxyzxy"))
 	//fmt.Println(LengthOfLongestSubstring("xxxx"))
 	//fmt.Println(LengthOfLongestSubstring("bwf"))
-	fmt.Println(CharacterReplacement("XYYX", 2))
-	fmt.Println(CharacterReplacement("AAABABB", 1))
+	//fmt.Println(CharacterReplacement("XYYX", 2))
+	//fmt.Println(CharacterReplacement("AAABABB", 1))
+	fmt.Println(MinWindow("OUZODYXAZV", "XYZ"))
+	fmt.Println(MinWindow("xyz", "xyz"))
+	fmt.Println(MinWindow("x", "xy"))
 }
