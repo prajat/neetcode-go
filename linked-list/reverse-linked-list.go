@@ -1,5 +1,7 @@
 package main
 
+/*Given the beginning of a singly linked list head, reverse the list, and return the new beginning of the list. */
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
