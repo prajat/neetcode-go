@@ -53,7 +53,7 @@ func (h *MinHeap) Pop() any {
 	return node
 }
 
-func mergeKLis	tsV2(lists []*ListNode) *ListNode {
+func mergeKListsV2(lists []*ListNode) *ListNode {
 	minHeap := &MinHeap{}
 	heap.Init(minHeap)
 
