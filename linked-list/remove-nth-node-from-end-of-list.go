@@ -26,6 +26,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return dummy.Next
 }
 
+// Optimal Solution - O(1) space
 func removeNthFromEndV2(head *ListNode, n int) *ListNode {
 	// use two pass approach to find the length of Linked list(N)
 	length := 0
