@@ -15,7 +15,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 		// Right Subtree
 		return lowestCommonAncestor(root.Right, p, q)
 	} else {
-		// Both Left and Right Subtree - so the root must be the only LCS possible
+		// Both Left and Right Subtree - so root must be the only LCS possible
 		return root
 	}
 }

@@ -1,7 +1,7 @@
 package main
 
 // BFS - level Order traversal - visit level by level using a queue
-func levelOrder(root *TreeNode) [][]int {
+func bfs(root *TreeNode) [][]int {
 	if root == nil {
 		return nil
 	}
@@ -14,8 +14,8 @@ func levelOrder(root *TreeNode) [][]int {
 		level := make([]int, 0, levelSize)
 
 		for i := 0; i < levelSize; i++ {
-			node := queue[i]
-			queue = queue[i:]
+			node := queue[0]
+			queue = queue[1:]
 
 			level = append(level, node.Val)
 
