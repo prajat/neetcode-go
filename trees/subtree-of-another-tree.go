@@ -8,5 +8,5 @@ func isSubtree(root *TreeNode, subRoot *TreeNode) bool {
 	if root == nil {
 		return false
 	}
-	isSubtree(root.Left)
+	return isSameTree(root, subRoot) || isSubtree(root.Left, subRoot) || isSubtree(root.Right, subRoot)
 }
