@@ -15,9 +15,9 @@ type PrefixTree struct {
 	isEnd    bool
 }
 
-func Constructor() PrefixTree {
-	return PrefixTree{}
-}
+//func Constructor() PrefixTree {
+//	return PrefixTree{}
+//}
 
 // O(L) where L = length of the word
 func (this *PrefixTree) Insert(word string) {
