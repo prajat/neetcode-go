@@ -22,8 +22,8 @@ func findWords(board [][]byte, words []string) []string {
 }
 
 func exists(board [][]byte, word string) bool {
-	for row := 0; row < len(board); row++ {
-		for col := 0; col < len(board[row]); col++ {
+	for row := range board {
+		for col := range board[row] {
 			if board[row][col] == word[0] && search(board, word, row, col, 0) {
 				return true
 			}
