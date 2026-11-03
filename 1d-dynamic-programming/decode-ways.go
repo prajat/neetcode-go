@@ -46,3 +46,28 @@ func numDecodings(s string) int {
 	}
 	return dfs(0)
 }
+
+// only recursion - time limit exceeded when submitted
+func numDecodingsV2(s string) int {
+	var dfs func(int) int
+	dfs = func(index int) int {
+		if index == len(s) {
+			return 1
+		}
+
+		if s[index] == '0' {
+			return 0
+		}
+
+		// one-digit
+		result := dfs(index + 1)
+
+		// two-digits
+		if index+1 < len(s) && (s[index] == '1' || (s[index] == '2' && s[index+1] <= '6')) {
+			result += dfs(index + 2)
+		}
+
+		return result
+	}
+	return dfs(0)
+}
